@@ -4,15 +4,14 @@
 #include <stdio.h>
 int main()
 {
-	int base;
-	int altura;
-	int area;
-	printf("Para calcular el area de un rectangulo los lados tienen que ser diferentes\n");
-	printf("Base:");
-	scanf_s("%i", &base);
-	printf("Altura:");
-	scanf_s("%i", &altura);
-	area = base * altura;
-	printf("El area del rectangulo es de %i", area);
+	int radio;
+	float pi;
+	float area;
+	printf("Para calcular el area de un circulo el valor de pi se toma como 3.14\n");
+	printf("Radio:");
+	scanf_s("%i", &radio);
+	pi = 3.14;
+	area = pi*(radio*radio);
+	printf("El area del circulo es de %.2f", area);
 
 }
